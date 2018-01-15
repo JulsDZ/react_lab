@@ -1,6 +1,6 @@
 import { Todo } from './types';
 
-export const addTodo = (list: string[], item: string) => [...list, item];
+export const addTodo = (list: Array<Todo>, item: Todo) => [...list, item];
 
 export const generateId = () => Math.floor(Math.random()*100000);
 
